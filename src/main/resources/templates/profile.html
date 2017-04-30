@@ -1,7 +1,10 @@
 <#include "header.html">
 
 <div class="container">
-	<h1>Welcome to your profile</h1>
+	<h1>Welcome to ${user} profile</h1>
+	<h3>Hello ${member.name}</h3>
+	<h4>Your email is ${member.email}</h4>
+	<h4>Your full name is ${member.fullName} </h4>
 	<a href="/logout"
 	   class="btn btn-outline-primary">Log Out</a>
 </div>

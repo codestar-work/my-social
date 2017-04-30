@@ -1,0 +1,23 @@
+<#include "header.html">
+<style>
+	input, textarea, button {
+		margin-top: 10px;
+	}
+</style>
+<div class="container">
+	<form method="post" enctype="multipart/form-data">
+		<input name="topic"
+			   class="form-control"
+			   placeholder="Topic"
+			   autofocus>
+		<textarea name="detail"
+				  class="form-control"
+				  rows="5"
+				  placeholder="Detail"></textarea>
+		<input type="file" name="photo">
+		<button class="btn btn-primary">Post</button>
+	</form>
+</div>
+
+
+<#include "footer.html">

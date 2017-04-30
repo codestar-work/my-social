@@ -8,3 +8,13 @@ create table member(
     email varchar(100) unique, 
     password varchar(200) 
 );
+
+create table post(
+	id       serial,
+	topic    varchar(500),
+	detail   varchar(8000),
+	member   bigint,
+	time     timestamp
+);
+
+alter table post add photo varchar(200);
